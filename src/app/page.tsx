@@ -2,6 +2,7 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import heroImage from '@/images/herokarabiner.jpg'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
@@ -15,15 +16,17 @@ import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
 import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
+import logoMultiplex from '@/images/clients/multiplex/mpbalts.svg'
+import logoMultiplexDark from '@/images/clients/multiplex/mpmelns.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
-import imageLaptop from '@/images/laptop.jpg'
+import servicesImage from '@/images/serviceskarabiner.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
+  ['Multiplex', logoMultiplex],
   ['Family Fund', logoFamilyFund],
   ['Unseal', logoUnseal],
   ['Mail Smirk', logoMailSmirk],
@@ -35,13 +38,13 @@ const clients = [
 
 function Clients() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <div className="mt-24 rounded-4xl bg-red-600 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
             We’ve worked with hundreds of amazing people
           </h2>
-          <div className="h-px flex-auto bg-neutral-800" />
+          <div className="h-px flex-auto bg-red-300" />
         </FadeIn>
         <FadeInStagger faster>
           <ul
@@ -49,9 +52,9 @@ function Clients() {
             className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
           >
             {clients.map(([client, logo]) => (
-              <li key={client}>
+              <li key={client as string}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image src={logo} alt={client as string} unoptimized />
                 </FadeIn>
               </li>
             ))}
@@ -140,7 +143,7 @@ function Services() {
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-135 flex-none lg:w-180">
               <StylizedImage
-                src={imageLaptop}
+                src={servicesImage}
                 sizes="(min-width: 1024px) 41rem, 31rem"
                 className="justify-center lg:justify-end"
               />
@@ -159,7 +162,7 @@ function Services() {
             </ListItem>
             <ListItem title="ROPE ACCESS">
               Rope Access systems play an essential role in achieving access to
-              building infrastructure and KArabiner is a leader in identifying
+              building infrastructure and Karabiner is a leader in identifying
               these requirements.
             </ListItem>
             <ListItem title="MAINTENANCE">
@@ -168,7 +171,8 @@ function Services() {
             </ListItem>
             <ListItem title="BMU">
               Karabiner's partnership with ATECHBCN, a global leader in
-              BMU's,enables us to bring clients cutting edge solutions and
+              BMUs, enables us to bring clients cutting edge solutions and
+              systems.
             </ListItem>
             <ListItem title="RECERTIFICATION">
               At Studio we understand the importance of having a robust and
@@ -206,16 +210,14 @@ export default async function Home() {
                 HEIGHT ACCESS COMPANY.
               </h1>
               <p className="mt-6 text-xl text-neutral-600">
-                We are a development studio working at the intersection of
-                design and technology. It’s a really busy intersection though —
-                a lot of our staff have been involved in hit and runs.
+                Karabiner has a proven ability to deliver innovative, safe and competitive access and height safety systems and rope access maintenance repair to the construction and mining industries in Australia.
               </p>
             </div>
-
-            <img
-              src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
-              alt=""
+            <Image
+              src={heroImage}
+              alt="Hero image showing height access equipment"
               className="h-full w-full rounded-3xl object-cover"
+              unoptimized
             />
           </div>
         </FadeIn>
@@ -227,9 +229,9 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={{ name: 'Multiplex', logo: logoMultiplexDark }}
       >
-        The team at Studio went above and beyond with our onboarding, even
+        The team at Karabiner went above and beyond with our onboarding, even
         finding a way to access the user’s microphone without triggering one of
         those annoying permission dialogs.
       </Testimonial>
@@ -240,3 +242,5 @@ export default async function Home() {
     </RootLayout>
   )
 }
+
+

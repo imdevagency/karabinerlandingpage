@@ -18,6 +18,7 @@ import imageDriesVincent from '@/images/team/dries-vincent.jpg'
 import imageEmmaDorsey from '@/images/team/emma-dorsey.jpg'
 import imageJeffreyWebb from '@/images/team/jeffrey-webb.jpg'
 import imageKathrynMurphy from '@/images/team/kathryn-murphy.jpg'
+import imageAndrewFurgeson from '@/images/team/andrew-furgeson.jpg'
 import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
 import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
 import imageMichaelFoster from '@/images/team/michael-foster.jpg'
@@ -27,7 +28,7 @@ import { RootLayout } from '@/components/RootLayout'
 
 function Culture() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
+    <div className="mt-24 rounded-4xl bg-red-600 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
         eyebrow="Our culture"
         title="Balance your passion with your passion for life."
@@ -62,68 +63,60 @@ const team = [
     title: 'Leadership',
     people: [
       {
-        name: 'Leslie Alexander',
-        role: 'Co-Founder / CEO',
-        image: { src: imageLeslieAlexander },
+        name: 'Andrew Furgeson',
+        role: 'Founder / CEO',
+        image: { src: imageAndrewFurgeson },
       },
-      {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
-        image: { src: imageMichaelFoster },
-      },
-      {
-        name: 'Dries Vincent',
-        role: 'Partner & Business Relations',
-        image: { src: imageDriesVincent },
-      },
+      
+      
     ],
   },
   {
     title: 'Team',
     people: [
       {
-        name: 'Chelsea Hagon',
-        role: 'Senior Developer',
+        name: 'Paul Kalinowski',
+        role: 'Project Manager',
         image: { src: imageChelseaHagon },
       },
       {
-        name: 'Emma Dorsey',
-        role: 'Senior Designer',
+        name: 'Mick Atkin',
+        role: 'National BMU Manager',
         image: { src: imageEmmaDorsey },
       },
       {
-        name: 'Leonard Krasner',
-        role: 'VP, User Experience',
+        name: 'Joel Morrow',
+        role: 'Mechanical Engineer',
         image: { src: imageLeonardKrasner },
       },
       {
-        name: 'Blake Reid',
-        role: 'Junior Copywriter',
+        name: 'Nabin Pinta',
+        role: 'Civil Engineer',
         image: { src: imageBlakeReid },
       },
       {
-        name: 'Kathryn Murphy',
-        role: 'VP, Human Resources',
+        name: 'Viraj Rohit',
+        role: 'Mechanical Engineer',
         image: { src: imageKathrynMurphy },
       },
       {
-        name: 'Whitney Francis',
-        role: 'Content Specialist',
+        name: 'Kevin Bere',
+        role: 'Project manager',
         image: { src: imageWhitneyFrancis },
       },
       {
-        name: 'Jeffrey Webb',
-        role: 'Account Coordinator',
+        name: 'Primrose Chairoongrueng',
+        role: 'Project Support',
         image: { src: imageJeffreyWebb },
       },
       {
-        name: 'Benjamin Russel',
-        role: 'Senior Developer',
+        name: 'Ahmad Akkash',
+        role: 'BMU Project Co-Ordinator',
         image: { src: imageBenjaminRussel },
       },
       {
-        name: 'Angela Fisher',
-        role: 'Front-end Developer',
+        name: 'Ryan McGrady',
+        role: 'Mechanical Engineer',
         image: { src: imageAngelaFisher },
       },
     ],
@@ -197,16 +190,10 @@ export default async function About() {
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+            With 23 years of experience, we’ve overcome every challenge in designing and installing façade access and height safety systems, as well as delivering industrial and commercial integrity maintenance. Our team’s unmatched expertise allows us to align solutions with your goals and deliver exactly what you need.
           </p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+            We operate across all major cities and regional Australia, and have completed projects in Indonesia, New Zealand, Malaysia, PNG, Timor, Qatar, and the UAE. By working closely with trusted partners, we continuously expand our capabilities to offer the best products and service—always focused on your outcome.
           </p>
         </div>
       </PageIntro>
