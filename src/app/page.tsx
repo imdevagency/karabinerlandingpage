@@ -73,7 +73,7 @@ function CaseStudies({
   return (
     <>
       <SectionIntro
-        title="Harnessing technology for a brighter future"
+        title="Our work is our passion."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
