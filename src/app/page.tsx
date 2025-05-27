@@ -78,7 +78,7 @@ function CaseStudies({
       >
         <p>
           We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
+          challenges. It’s also the cause, so we find ourselves in a bit of a
           catch 22 situation.
         </p>
       </SectionIntro>
@@ -135,7 +135,7 @@ function Services() {
       >
         <p>
           As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+          old projects – we can come up with an endless number of those.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -170,9 +170,8 @@ function Services() {
               functionality, and safety of high-rise structures.
             </ListItem>
             <ListItem title="BMU">
-              Karabiner's partnership with ATECHBCN, a global leader in
-              BMUs, enables us to bring clients cutting edge solutions and
-              systems.
+              Karabiner’s partnership with ATECHBCN, a global leader in BMUs,
+              enables us to bring clients cutting edge solutions and systems.
             </ListItem>
             <ListItem title="RECERTIFICATION">
               At Studio we understand the importance of having a robust and
@@ -206,11 +205,14 @@ export default async function Home() {
           <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
             <div>
               <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-7xl">
-                AUSTRALIA'S <span className="text-red-600">ORIGINAL</span>{' '}
+                AUSTRALIA’S <span className="text-red-600">ORIGINAL</span>{' '}
                 HEIGHT ACCESS COMPANY.
               </h1>
               <p className="mt-6 text-xl text-neutral-600">
-                Karabiner has a proven ability to deliver innovative, safe and competitive access and height safety systems and rope access maintenance repair to the construction and mining industries in Australia.
+                Karabiner has a proven ability to deliver innovative, safe and
+                competitive access and height safety systems and rope access
+                maintenance repair to the construction and mining industries in
+                Australia.
               </p>
             </div>
             <Image
@@ -242,5 +244,3 @@ export default async function Home() {
     </RootLayout>
   )
 }
-
-

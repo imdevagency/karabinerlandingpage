@@ -119,6 +119,16 @@ const team = [
         role: 'Mechanical Engineer',
         image: { src: imageAngelaFisher },
       },
+      {
+        name: 'Shane Roger',
+        role: 'Construction Supervisor',
+        image: { src: imageAngelaFisher },
+      },
+      {
+        name: 'Tom Nutting',
+        role: 'Rope Access Manager',
+        image: { src: imageAngelaFisher },
+      },
     ],
   },
 ]
